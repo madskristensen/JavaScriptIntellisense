@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Writers\JqueryUIWriter.cs" />
     <Compile Include="Writers\QUnitWriter.cs" />
     <Compile Include="Writers\IWriter.cs" />
     <Compile Include="Writers\JqueryWriter.cs" />

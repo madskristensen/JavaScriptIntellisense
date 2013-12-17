@@ -60,7 +60,7 @@ namespace JqueryIntellisense
                 var arg = new Argument();
                 arg.Name = GetAttr(node, "name");
                 arg.Type = DisambiguateType(GetAttr(node, "type"));
-                arg.Description = node.Element("desc").Value;
+                arg.Description = node.Element("desc") != null ? node.Element("desc").Value : string.Empty;
                 list.Add(arg);
             }
 

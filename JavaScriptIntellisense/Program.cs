@@ -9,10 +9,11 @@ namespace JqueryIntellisense
     {
         private static Tuple<string, Type> _qunit = new Tuple<string, Type>("http://api.qunitjs.com/resources/api.xml", typeof(QUnitWriter));
         private static Tuple<string, Type> _jquery = new Tuple<string, Type>("http://api.jquery.com/resources/api.xml", typeof(JqueryWriter));
+        private static Tuple<string, Type> _jqueryUi = new Tuple<string, Type>("http://api.jqueryui.com/resources/api.xml", typeof(JqueryUIWriter));
 
         static void Main(string[] args)
         {
-            var project = _qunit;
+            var project = _jqueryUi;
             var doc = XElement.Load(project.Item1);
 
             var parser = new Parser();
